@@ -18,18 +18,7 @@ export default function Breadcrumb() {
   ]
 
   return (
-    <div className="a-breadcrumb">
-      {/* <ul className="a-breadcrumb__list">
-        {data.map((item, index) => (
-          <>
-            <li key={item.id} className="a-breadcrumb__list-item">
-              <a href={item.url} className="a-breadcrumb__link" aria-label={`Breadcrumb ${item.text}`}>{item.text}</a>
-              {index !== data.length - 1 && ('/')}
-            </li>
-          </>
-        ))}
-      </ul> */}
-
+    <div className="a-breadcrumb" id="a-breadcrumb">
       <nav aria-label="breadcrumbs">
         <ol className="a-breadcrumb__list">
           {data.map((item, index) => (
