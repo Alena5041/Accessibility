@@ -56,8 +56,8 @@ export default function PageBreadcrumb() {
         </details>
 
         <details>
-          <summary>Non-usage focus style.</summary>
-          For anyone using the keyboard to navigate a page, focus styles are critical for visually displaying which focusable element is currently selected.
+          <summary>Usage non-responsive web design.</summary>
+          It&apos;s necessary to control how pages look with zoom for example situation when people have some vision disability. Don&apos;t forget people have difirent vision disability, some people need reduced text.
         </details>
 
         <h2>Accessible version</h2>

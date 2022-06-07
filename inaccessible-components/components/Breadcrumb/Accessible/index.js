@@ -28,7 +28,6 @@ export default function Breadcrumb() {
           ))}
         </ol>
       </nav>
-
     </div>
   )
 }
