@@ -16,7 +16,7 @@ export default function PageBreadcrumb() {
         <p>This page contains the inaccessible version of the component.</p>
 
         <h2>Inaccessible version</h2>
-        {/* <Breadcrumb /> */}
+        <Breadcrumb />
         
         <a href="#a-breadcrumb" aria-label='Skip to main breadcrumb'>Skip to breadcrumb</a>
 
