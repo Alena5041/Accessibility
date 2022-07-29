@@ -68,6 +68,10 @@ export default function PageModal() {
           <summary>Modal has fixed width in px</summary>
         </details>
 
+        <details>
+          <summary>Focus don't work properly</summary>
+        </details>
+
         <h2>Accessible version</h2>
 
         <AccessibleModal />

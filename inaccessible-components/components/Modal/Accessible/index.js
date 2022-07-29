@@ -3,12 +3,34 @@ import { useState } from "react";
 export default function Modal() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const focusableElements = document.querySelectorAll(
+    'button:not(.a-modal__close-btn), a[href]:not(.a-modal__link), input, select, textarea, [tabindex]:not([tabindex="-1"]), details'
+  );
+
+  const focusableModalElements = document.querySelectorAll(
+    "button.a-modal__close-btn, a.a-modal__link"
+  );
+
+  if (isModalOpen) {
+    console.log(focusableElements);
+    for (let element of focusableModalElements) {
+      element.removeAttribute("tabindex", "-1");
+    }
+    for (let element of focusableElements) {
+      element.setAttribute("tabindex", "-1");
+    }
+  }
+
   const handleCloseButtonClick = () => {
     setIsModalOpen(false);
 
-    const focusableElements = document.querySelectorAll(
-      'button, a[href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    );
+    for (let element of focusableElements) {
+      element.removeAttribute("tabindex", "-1");
+    }
+
+    for (let element of focusableModalElements) {
+      element.setAttribute("tabindex", "-1");
+    }
 
     const firstFocusableElement = focusableElements[0];
 
