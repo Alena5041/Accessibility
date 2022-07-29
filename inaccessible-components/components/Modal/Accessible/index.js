@@ -12,7 +12,6 @@ export default function Modal() {
   );
 
   if (isModalOpen) {
-    console.log(focusableElements);
     for (let element of focusableModalElements) {
       element.removeAttribute("tabindex", "-1");
     }

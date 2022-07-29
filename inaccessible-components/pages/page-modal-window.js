@@ -72,6 +72,10 @@ export default function PageModal() {
           <summary>Focus don't work properly</summary>
         </details>
 
+        <details>
+          <summary>Non-usage responsive design</summary>
+        </details>
+
         <h2>Accessible version</h2>
 
         <AccessibleModal />
