@@ -16,7 +16,11 @@ body {
 }
 
 #__next {
-  padding: 2rem;
+  padding: 1rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 2rem;
+  }
 }
 
 *,
@@ -27,19 +31,19 @@ body {
 
 details {
   border: 1px solid black;
-  padding: .5rem .5rem 0 .5rem;
-  margin-top: .5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  margin-top: 0.5rem;
 }
 
 summary {
   font-weight: bold;
-  margin: -.5rem -.5rem 0;
-  padding: .5rem;
+  margin: -0.5rem -0.5rem 0;
+  padding: 0.5rem;
   background-color: #eaeaea;
 }
 
 details[open] {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 details[open] summary {
