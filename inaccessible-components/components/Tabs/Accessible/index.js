@@ -43,8 +43,7 @@ export default function Tabs() {
             key={id}
             id={`tab-${id}`}
             onClick={() => handleTablistClick(id)}
-            onFocus={() => handleTablistClick(id)}
-            tabIndex={0}
+            tabIndex={`${isPanelActive(id) ? "0" : "-1"}`}
             className={`
             a-tabs__list-item
               ${isPanelActive(id) ? "a-tabs__list-item--active" : ""}
