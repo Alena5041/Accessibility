@@ -1,0 +1,31 @@
+import Head from "next/head";
+import Layout from "../core-components/Layout";
+import Tabs from "../components/Tabs";
+import AccessibleTabs from "../components/Tabs/Accessible";
+
+export default function PageTabs() {
+  return (
+    <>
+      <Head>
+        <title>blank</title>
+      </Head>
+
+      <Layout>
+        <h1>Tabs</h1>
+
+        <p>This page contains the inaccessible version of the component.</p>
+
+        <h2>Inaccessible version</h2>
+
+        <Tabs />
+
+        <h3>Issues</h3>
+        <p>Expand each issue to see the user impact.</p>
+
+        <h2>Accessible version</h2>
+
+        <AccessibleTabs />
+      </Layout>
+    </>
+  );
+}
