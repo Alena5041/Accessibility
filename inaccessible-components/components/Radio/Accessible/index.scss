@@ -1,0 +1,23 @@
+.a-radios {
+  margin-top: 2rem;
+  background-color: rgb(237, 237, 237);
+  padding: 1rem;
+  color: rgb(114, 92, 92);
+
+  .a-radio-group {
+    &__label {
+      cursor: pointer;
+    }
+
+    &__item {
+      padding-right: 0.2rem;
+    }
+
+    &__submit {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      color: rgb(114, 92, 92);
+      cursor: pointer;
+    }
+  }
+}
