@@ -46,9 +46,21 @@ export default function PageRadios() {
         </details>
 
         <details>
-          <summary>Radio do not have label.</summary>
-          For screen reader users necessary to have label for components
-          without. text.
+          <summary>Radios do not have label.</summary>
+          For screen reader users necessary to have label for components without
+          text.
+        </details>
+
+        <details>
+          <summary>Radio group do not have role.</summary>
+          Add role for radio group to announce as radiogroup for screen reader
+          users.
+        </details>
+
+        <details>
+          <summary>Radio group do not have label.</summary>
+          For screen reader users necessary to have label for components without
+          text.
         </details>
 
         <details>
