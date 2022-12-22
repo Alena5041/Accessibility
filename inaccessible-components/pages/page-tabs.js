@@ -7,7 +7,7 @@ export default function PageTabs() {
   return (
     <>
       <Head>
-        <title>blank</title>
+        <title>Tabs | Inaccessible components</title>
       </Head>
 
       <Layout>

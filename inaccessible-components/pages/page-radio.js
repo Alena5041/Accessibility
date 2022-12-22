@@ -7,7 +7,7 @@ export default function PageRadios() {
   return (
     <>
       <Head>
-        <title>Inaccessible and accessible components</title>
+        <title>Radio group | Inaccessible components</title>
       </Head>
 
       <Layout>
